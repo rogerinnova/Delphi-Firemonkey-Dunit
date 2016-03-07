@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BD1FAB69-E166-4FD1-87A7-021AC3D325EB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="VCLToFireMonkeyFormConvtr.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestingVCLToFireMonkeyFormConvtr.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\DUnitFm\XE5\DUnitTestApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\DFMFMXRef.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\Play3.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="VCLToFireMonkeyFormConvtr">
+        <MSBuild Projects="VCLToFireMonkeyFormConvtr.dproj"/>
+    </Target>
+    <Target Name="VCLToFireMonkeyFormConvtr:Clean">
+        <MSBuild Projects="VCLToFireMonkeyFormConvtr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLToFireMonkeyFormConvtr:Make">
+        <MSBuild Projects="VCLToFireMonkeyFormConvtr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TestingVCLToFireMonkeyFormConvtr">
+        <MSBuild Projects="TestingVCLToFireMonkeyFormConvtr.dproj"/>
+    </Target>
+    <Target Name="TestingVCLToFireMonkeyFormConvtr:Clean">
+        <MSBuild Projects="TestingVCLToFireMonkeyFormConvtr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TestingVCLToFireMonkeyFormConvtr:Make">
+        <MSBuild Projects="TestingVCLToFireMonkeyFormConvtr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DUnitTestApp">
+        <MSBuild Projects="..\..\DUnitFm\XE5\DUnitTestApp.dproj"/>
+    </Target>
+    <Target Name="DUnitTestApp:Clean">
+        <MSBuild Projects="..\..\DUnitFm\XE5\DUnitTestApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DUnitTestApp:Make">
+        <MSBuild Projects="..\..\DUnitFm\XE5\DUnitTestApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DFMFMXRef">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\DFMFMXRef.dproj"/>
+    </Target>
+    <Target Name="DFMFMXRef:Clean">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\DFMFMXRef.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DFMFMXRef:Make">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\DFMFMXRef.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Play3">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\Play3.dproj"/>
+    </Target>
+    <Target Name="Play3:Clean">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\Play3.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Play3:Make">
+        <MSBuild Projects="..\..\..\DelphiXE2Projects\FireMonkey\TestPlay\Play3.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="VCLToFireMonkeyFormConvtr;TestingVCLToFireMonkeyFormConvtr;DUnitTestApp;DFMFMXRef;Play3"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="VCLToFireMonkeyFormConvtr:Clean;TestingVCLToFireMonkeyFormConvtr:Clean;DUnitTestApp:Clean;DFMFMXRef:Clean;Play3:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="VCLToFireMonkeyFormConvtr:Make;TestingVCLToFireMonkeyFormConvtr:Make;DUnitTestApp:Make;DFMFMXRef:Make;Play3:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

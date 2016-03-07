@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0F7B99AF-160D-4EB8-B4AD-B827A0628308}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="IsImageViews.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IS_FMXDesignTimeEditors.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SampleProject.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="IsImageViews">
+        <MSBuild Projects="IsImageViews.dproj"/>
+    </Target>
+    <Target Name="IsImageViews:Clean">
+        <MSBuild Projects="IsImageViews.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IsImageViews:Make">
+        <MSBuild Projects="IsImageViews.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors">
+        <MSBuild Projects="IS_FMXDesignTimeEditors.dproj"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors:Clean">
+        <MSBuild Projects="IS_FMXDesignTimeEditors.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors:Make">
+        <MSBuild Projects="IS_FMXDesignTimeEditors.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SampleProject">
+        <MSBuild Projects="SampleProject.dproj"/>
+    </Target>
+    <Target Name="SampleProject:Clean">
+        <MSBuild Projects="SampleProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SampleProject:Make">
+        <MSBuild Projects="SampleProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="IsImageViews;IS_FMXDesignTimeEditors;SampleProject"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="IsImageViews:Clean;IS_FMXDesignTimeEditors:Clean;SampleProject:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="IsImageViews:Make;IS_FMXDesignTimeEditors:Make;SampleProject:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{14A0265C-700A-455E-B969-168A24C72CCF}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="..\ActionList\ActionListPrj.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Convter\XE5\VCLToFireMonkeyFormConvtr.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\TreeView\XE5\TreeViewPlay.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Dunitfmx\xe5\DUnitTestProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ImageList\XE5\ImageListDemoProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ImageList\XE5\ImageListTestProj.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Dunitfmx\xe5\TryDUnitTestApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Imagelistpkg\XE5\IS_FMXDesignTimeEditors.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Imagelistpkg\XE5\IsImageViews.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ActionListPrj">
+        <MSBuild Projects="..\ActionList\ActionListPrj.dproj"/>
+    </Target>
+    <Target Name="ActionListPrj:Clean">
+        <MSBuild Projects="..\ActionList\ActionListPrj.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActionListPrj:Make">
+        <MSBuild Projects="..\ActionList\ActionListPrj.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VCLToFireMonkeyFormConvtr">
+        <MSBuild Projects="..\Convter\XE5\VCLToFireMonkeyFormConvtr.dproj"/>
+    </Target>
+    <Target Name="VCLToFireMonkeyFormConvtr:Clean">
+        <MSBuild Projects="..\Convter\XE5\VCLToFireMonkeyFormConvtr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VCLToFireMonkeyFormConvtr:Make">
+        <MSBuild Projects="..\Convter\XE5\VCLToFireMonkeyFormConvtr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TreeViewPlay">
+        <MSBuild Projects="..\TreeView\XE5\TreeViewPlay.dproj"/>
+    </Target>
+    <Target Name="TreeViewPlay:Clean">
+        <MSBuild Projects="..\TreeView\XE5\TreeViewPlay.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TreeViewPlay:Make">
+        <MSBuild Projects="..\TreeView\XE5\TreeViewPlay.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DUnitTestProject">
+        <MSBuild Projects="..\Dunitfmx\xe5\DUnitTestProject.dproj"/>
+    </Target>
+    <Target Name="DUnitTestProject:Clean">
+        <MSBuild Projects="..\Dunitfmx\xe5\DUnitTestProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DUnitTestProject:Make">
+        <MSBuild Projects="..\Dunitfmx\xe5\DUnitTestProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageListDemoProject">
+        <MSBuild Projects="..\ImageList\XE5\ImageListDemoProject.dproj"/>
+    </Target>
+    <Target Name="ImageListDemoProject:Clean">
+        <MSBuild Projects="..\ImageList\XE5\ImageListDemoProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageListDemoProject:Make">
+        <MSBuild Projects="..\ImageList\XE5\ImageListDemoProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageListTestProj">
+        <MSBuild Projects="..\ImageList\XE5\ImageListTestProj.dproj"/>
+    </Target>
+    <Target Name="ImageListTestProj:Clean">
+        <MSBuild Projects="..\ImageList\XE5\ImageListTestProj.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageListTestProj:Make">
+        <MSBuild Projects="..\ImageList\XE5\ImageListTestProj.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TryDUnitTestApp">
+        <MSBuild Projects="..\Dunitfmx\xe5\TryDUnitTestApp.dproj"/>
+    </Target>
+    <Target Name="TryDUnitTestApp:Clean">
+        <MSBuild Projects="..\Dunitfmx\xe5\TryDUnitTestApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TryDUnitTestApp:Make">
+        <MSBuild Projects="..\Dunitfmx\xe5\TryDUnitTestApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IS_FMXDesignTimeEditors.dproj"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors:Clean">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IS_FMXDesignTimeEditors.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IS_FMXDesignTimeEditors:Make">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IS_FMXDesignTimeEditors.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IsImageViews">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IsImageViews.dproj"/>
+    </Target>
+    <Target Name="IsImageViews:Clean">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IsImageViews.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IsImageViews:Make">
+        <MSBuild Projects="..\Imagelistpkg\XE5\IsImageViews.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ActionListPrj;VCLToFireMonkeyFormConvtr;TreeViewPlay;DUnitTestProject;ImageListDemoProject;ImageListTestProj;TryDUnitTestApp;IS_FMXDesignTimeEditors;IsImageViews"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ActionListPrj:Clean;VCLToFireMonkeyFormConvtr:Clean;TreeViewPlay:Clean;DUnitTestProject:Clean;ImageListDemoProject:Clean;ImageListTestProj:Clean;TryDUnitTestApp:Clean;IS_FMXDesignTimeEditors:Clean;IsImageViews:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ActionListPrj:Make;VCLToFireMonkeyFormConvtr:Make;TreeViewPlay:Make;DUnitTestProject:Make;ImageListDemoProject:Make;ImageListTestProj:Make;TryDUnitTestApp:Make;IS_FMXDesignTimeEditors:Make;IsImageViews:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

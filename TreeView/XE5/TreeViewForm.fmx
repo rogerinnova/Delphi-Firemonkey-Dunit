@@ -1,0 +1,82 @@
+object FMTreeView: TFMTreeView
+  Left = 0
+  Top = 0
+  Caption = 'FMTreeView'
+  ClientHeight = 480
+  ClientWidth = 640
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TreeView1: TTreeView
+    Height = 100.000000000000000000
+    Position.X = 120.000000000000000000
+    Position.Y = 192.000000000000000000
+    StyleLookup = 'TreeView1Style1'
+    TabOrder = 0
+    Width = 273.000000000000000000
+    object TreeViewItem1: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      StyleLookup = 'TreeViewItem1Style1'
+      TabOrder = 0
+      Text = 'TreeViewItem1'
+      object TreeViewItem2: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'TreeViewItem2'
+      end
+      object TreeViewItem3: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 1
+        Text = 'TreeViewItem3'
+        object TreeViewItem4: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 0
+          Text = 'TreeViewItem4'
+        end
+        object TreeViewItem6: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 1
+          Text = 'TreeViewItem6'
+        end
+      end
+    end
+    object TreeViewItem5: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 1
+      Text = 'TreeViewItem5'
+      object TreeViewItem7: TTreeViewItem
+        IsChecked = False
+        IsExpanded = False
+        IsSelected = False
+        TabOrder = 0
+        Text = 'TreeViewItem7'
+        object TreeViewItem8: TTreeViewItem
+          IsChecked = False
+          IsExpanded = False
+          IsSelected = False
+          TabOrder = 0
+          Text = 'TreeViewItem8'
+        end
+      end
+    end
+  end
+end
