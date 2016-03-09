@@ -1,7 +1,8 @@
 # Delphi-Firemonkey-Dunit
 Porting DUnit to Muliple platforms required a FireMonkey GUI which in turn needed some FMX Component development. 
 
-This repository provides the basic code and sample projects used
+This repository provides the basic code and sample projects used. To compile a mobile DUnit testing environment see 
+https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/tree/master/Dunitfmx
 
 The Powerpoints included look at ActionLists and ImageLists in the Dunit VCL Form and converting such forms to FireMonkey.
 
