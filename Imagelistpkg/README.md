@@ -6,7 +6,7 @@ Had we done the conversion in this version the TFMXImageList would not be requir
 I would not use TFMXImageList in new developments after XE8.
 
 The PowerPoint Slides
-https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/ImageListsFMX.ppt give some usage notes. 
+https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/blob/master/ImageListsFMX.ppt give some usage notes. 
 
 These Packages have to be installed in the IDE to view the  GUITestRunnerFMXMobile form in the IDE.
 
