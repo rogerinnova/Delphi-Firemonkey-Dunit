@@ -9,7 +9,10 @@ Modifications made here were required because the of the limited file handling o
 
 This version also does away with the requirement for a startup screen and a modal show of the Gui form.
 
-For a new project make GUITestRunnerFMXMobile the main form, Include the Libraries in the search and add your test code to the project.
+For a new project make GUITestRunnerFMXMobile the main form, Include the Libraries in the search and add your test code to the project. 
+
+#Note
+To be able to view and change the GUITestRunnerFMXMobile you will have to add the two package files in the Imagelist BPLs https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/tree/master/Imagelistpkg
 
 With the introduction of specialised device forms about XE7 there are problems using forms in an earlier version of Delphi so the code has a a Delphi 10 Seattle (D10S) Project and Gui form which has been tested on Android and a couple of back converted XE5 and XE6 versions which should happilly move forward but which I am unable to confirm mobile compatibility.
   
