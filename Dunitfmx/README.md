@@ -1,0 +1,15 @@
+#A FireMonkey Version of Dunit Testing Which Should work on any Platform  
+
+
+Originally presented to ADUG 
+http://docs.innovasolutions.com.au/Docs/ADUGDelphi/ADUGDecember2014.html
+At a stage where it had been tested on Win32, Win64 and Mac OS this code has been further advanced so that it now works on Android devices.
+
+Modifications made here were required because the of the limited file handling on these devioces and the removal of AnsiString from the NextGen compiler and the lack of Menus on Mobile Devices.
+
+This version also does away with the requirement for a startup screen and a modal show of the Gui form.
+
+For a new project make GUITestRunnerFMXMobile the main form, Include the Libraries in the search and add your test code to the project.
+
+With the introduction of specialised device forms about XE7 there are problems using forms in an earlier version of Delphi so the code has a a Delphi 10 Seattle (D10S) Project and Gui form which has been tested on Android and a couple of back converted XE5 and XE6 versions which should happilly move forward but which I am unable to confirm mobile compatibility.
+  
