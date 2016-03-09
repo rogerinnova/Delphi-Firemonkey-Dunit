@@ -12,3 +12,6 @@ These Packages have to be installed in the IDE to view the  GUITestRunnerFMXMobi
 
 The files FMXListBoxLib and FMXTreeViewLib contain extensions to FireMonkey componants required to interface with TFMXImageList and the DUnit Gui Code.
 The Style File StylesForDUnitMobileForm contains the related style changes.
+
+Help Documentation
+http://docs.innovasolutions.com.au/Docs/DelphiComponents/ComponentHelp/
