@@ -11,6 +11,9 @@ This version also does away with the requirement for a startup screen and a moda
 
 For a new project make GUITestRunnerFMXMobile the main form, Include the Libraries in the search and add your test code to the project. 
 
+The files FMXListBoxLib and FMXTreeViewLib contain extensions to FireMonkey componants required to interface with TFMXImageList and the DUnit Gui Code.
+The Style File StylesForDUnitMobileForm contains the related style changes.
+
 #Note
 To be able to view and change the GUITestRunnerFMXMobile you will have to add the two package files in the Imagelist BPLs https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/tree/master/Imagelistpkg
 
