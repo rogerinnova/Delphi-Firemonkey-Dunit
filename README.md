@@ -1,5 +1,5 @@
 # Delphi-Firemonkey-Dunit
-Porting DUnit to Muliple platforms required a FireMonkey GUI which in turn needed some FMX Component development. 
+Porting DUnit to multiple platforms required a FireMonkey GUI which in turn needed some FMX Component development. 
 
 This repository provides the basic code and sample projects used. To compile a mobile DUnit testing environment see 
 https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/tree/master/Dunitfmx
