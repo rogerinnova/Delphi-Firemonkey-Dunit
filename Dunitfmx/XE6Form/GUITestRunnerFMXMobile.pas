@@ -549,7 +549,7 @@ function TMobileGUITestRunner.IniFileName: string;
 const
   TEST_INI_FILE = 'dunit.ini';
 begin
- Result:=  System.IOUtils.TPath.GetHomePath + TEST_INI_FILE;
+ Result:=  System.IOUtils.TPath.GetHomePath + '\' + TEST_INI_FILE;
 (*
 {$Ifdef MSWINDOWS}
     result := ExtractFilePath(ParamStr(0)) + TEST_INI_FILE;

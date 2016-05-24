@@ -556,7 +556,7 @@ function TMobileGUITestRunner.IniFileName: string;
 const
   TEST_INI_FILE = 'dunit.ini';
 begin
- Result:=  System.IOUtils.TPath.GetHomePath + TEST_INI_FILE;
+ Result:=  System.IOUtils.TPath.GetHomePath + '\' + TEST_INI_FILE;
 (*
 {$Ifdef MSWINDOWS}
     result := ExtractFilePath(ParamStr(0)) + TEST_INI_FILE;
@@ -846,6 +846,7 @@ begin
       LbxResults.Items[0] := '';
   end;
 
+  TestNumber := 0;
   if TestResult <> nil then
   begin
     // Save the test number as we use it a lot
@@ -987,6 +988,7 @@ end;
 
 procedure TMobileGUITestRunner.SetTreeNodeImage(Node :TTreeNode; imgIndex :Integer);
 begin
+  TestTree.Selected := Node;
   while Node <> nil do
   begin
     if imgIndex > Node.ImageIndex then
