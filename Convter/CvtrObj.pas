@@ -2,8 +2,8 @@ unit CvtrObj;
 
 interface
 
-uses ISStrUtl, System.Classes, System.Types, System.SysUtils, Contnrs,
-  IsArrayLib, inifiles;
+uses PatchLib, System.Classes, System.Types, System.SysUtils, Contnrs,
+  {IsArrayLib,} inifiles;
 
 Type
   TDfmToFmxObject = class(TObject)
@@ -60,8 +60,6 @@ Type
     end;
 
 implementation
-
-uses IsUnicodeStrUtl;
 
 Const
   ContinueCode: AnsiString = '#$Continue$#';

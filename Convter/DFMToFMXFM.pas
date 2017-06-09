@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.Types, System.UITypes, System.Classes,
   System.Variants, System.Win.Registry, FMX.Types, FMX.Controls, FMX.Forms,
   FMX.Dialogs, FMX.Layouts, FMX.Memo,
-  CvtrObj, FMX.StdCtrls;
+  CvtrObj, FMX.StdCtrls, FMX.ScrollBox, FMX.Controls.Presentation;
 type
   TDFMtoFMXConvert = class(TForm)
     OpenDialog1: TOpenDialog;
@@ -51,8 +51,7 @@ implementation
 
 {$R *.fmx}
 
-uses IsXml, IsArrayLib, ISStrUtl, IsProcCl;
-
+uses PatchLib;
 procedure TDFMtoFMXConvert.BtnEditIniFileClick(Sender: TObject);
 Var
   Dlg: TOpenDialog;
