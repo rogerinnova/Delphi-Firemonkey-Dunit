@@ -419,9 +419,6 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.SmXhdpiPh.fmx ANDROID}
 {$R *.iPhone55in.fmx IOS}
-{$R *.iPhone47in.fmx IOS}
-{$R *.iPhone4in.fmx IOS}
-{$R *.iPhone.fmx IOS}
 
 { TMobileGUITestRunner }
 
@@ -676,10 +673,10 @@ Regards,
       Checked := ReadBool(cnConfigIniSection, 'AutoSave', Checked);
 
     { center splitter location }
-      ResultsPanel.Height := ReadFloat(cnConfigIniSection, 'ResultsPanel.Height',(ResultsPanel.Height));
+    //  ResultsPanel.Height := ReadFloat(cnConfigIniSection, 'ResultsPanel.Height',(ResultsPanel.Height));
 
     { error splitter location }
-      ErrorBoxPanel.Height := ReadFloat(cnConfigIniSection, 'ErrorMessage.Height', (ErrorBoxPanel.Height));
+    //  ErrorBoxPanel.Height := ReadFloat(cnConfigIniSection, 'ErrorMessage.Height', (ErrorBoxPanel.Height));
     with ErrorBoxVisibleAction do
       Checked := ReadBool(cnConfigIniSection, 'ErrorMessage.Visible', Checked);
 
@@ -1593,7 +1590,7 @@ begin
   begin
     NxtNode:= ThisNode as TTreeNode;
 //    Nxtnode:=NowNode.GetPrevSibling;
-   Cnt:=5;
+   Cnt:=20;
    While (NxtNode<>nil) and (Cnt>0) do
      begin
         Dec(Cnt);
@@ -1616,7 +1613,7 @@ begin
   begin
     NxtNode:= ThisNode as TTreeNode;
 //    Nxtnode:=NowNode.GetPrevSibling;
-   Cnt:=5;
+   Cnt:=20;
    While (NxtNode<>nil) and (Cnt>0) do
      begin
         Dec(Cnt);

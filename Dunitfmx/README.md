@@ -18,4 +18,12 @@ The Style File StylesForDUnitMobileForm contains the related style changes.
 To be able to view and change the GUITestRunnerFMXMobile you will have to add the two package files in the Imagelist BPLs https://github.com/rogerinnova/Delphi-Firemonkey-Dunit/tree/master/Imagelistpkg
 
 With the introduction of specialised device forms about XE7 there are problems using forms in an earlier version of Delphi so the code has a a Delphi 10 Seattle (D10S) Project and Gui form which has been tested on Android and a couple of back converted XE5 and XE6 versions which should happilly move forward but which I am unable to confirm mobile compatibility.
+
+
+#A Additions March 
+I further developed my DUnit form to reduce the pain of navigating around the very large test framework I was working on. This was in the context of the testing project not the sample DUnit project and so did not get to the github code. I have now added latest form code (Berlin and Tokyo) to the repository. In case someone is interested. I have only every exercised the IOS version on the emulator.
+
+I am happy to help anyone further this project. The main point is that provided you can put together a suitable FMX form the rest of the DUnit code seems to both compile and work.
+
+
   

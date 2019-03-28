@@ -3,94 +3,115 @@ inherited MobileGUITestRunner_SmXhdpiPh: TMobileGUITestRunner_SmXhdpiPh
   ClientWidth = 250
   DesignerMasterStyle = 0
   inherited BodyPanel: TPanel
-    Size.Width = 250.000000000000000000
+    Size.Width = 217.000000000000000000
     Size.Height = 375.000000000000000000
-    inherited ErrorBoxSplitter: TSplitter
-      Position.Y = 331.000000000000000000
-      Size.Width = 250.000000000000000000
-    end
     inherited TopPanel: TPanel
-      Size.Width = 250.000000000000000000
-      Size.Height = 331.000000000000000000
-      inherited ResultsSplitter: TSplitter
-        Position.Y = 209.000000000000000000
-        Size.Width = 250.000000000000000000
-        Size.Height = 8.000000000000000000
-      end
+      Size.Width = 217.000000000000000000
+      Size.Height = 344.000000000000000000
       inherited TreePanel: TPanel
-        Size.Width = 250.000000000000000000
-        Size.Height = 209.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 232.000000000000000000
         inherited lblTestTree: TLabel
-          Position.Y = 48.000000000000000000
-          Size.Width = 250.000000000000000000
-          Size.Height = 24.000000000000000000
+          Size.Width = 217.000000000000000000
         end
         inherited TestTree: TTreeView
-          Size.Width = 250.000000000000000000
-          Size.Height = 137.000000000000000000
-          Viewport.Width = 250.000000000000000000
-          Viewport.Height = 137.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 162.000000000000000000
+          Viewport.Width = 217.000000000000000000
+          Viewport.Height = 162.000000000000000000
         end
         inherited ToolBar1: TToolBar
-          Size.Width = 250.000000000000000000
-          Size.Height = 48.000000000000000000
+          Size.Width = 217.000000000000000000
+          inherited SelectAllButton: TSpeedButton
+            Position.X = 8.000000000000000000
+          end
+          inherited DeselectAllButton: TSpeedButton
+            Position.X = 7.000000000000000000
+            Position.Y = 24.000000000000000000
+          end
+          inherited SelectFailedButton: TSpeedButton
+            Position.X = 54.000000000000000000
+          end
+          inherited SelectCurrentButton: TSpeedButton
+            Position.X = 53.000000000000000000
+          end
           inherited DeselectCurrentButton: TSpeedButton
-            Position.X = 160.000000000000000000
+            Position.X = 192.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 25.000000000000000000
+          end
+          inherited RunAllButton: TSpeedButton
+            Position.X = 99.000000000000000000
+            Position.Y = 8.000000000000000000
+          end
+          inherited RunSelectedTestButton: TSpeedButton
+            Position.X = 144.000000000000000000
+            Position.Y = 8.000000000000000000
           end
           inherited StoplButton: TSpeedButton
-            Position.X = 209.000000000000000000
+            Position.X = 192.000000000000000000
+            Size.Width = 23.000000000000000000
           end
         end
       end
       inherited ResultsPanel: TPanel
-        Position.Y = 217.000000000000000000
-        Size.Width = 250.000000000000000000
-        Size.Height = 114.000000000000000000
+        Position.Y = 238.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 106.000000000000000000
         inherited ProgressPanel: TPanel
-          Size.Width = 250.000000000000000000
+          Size.Width = 217.000000000000000000
           inherited ScorePanel: TPanel
-            Size.Width = 250.000000000000000000
+            Size.Width = 217.000000000000000000
             inherited RectResultBar: TRectangle
-              Size.Width = 133.000000000000000000
+              Size.Width = 100.000000000000000000
             end
             inherited LbProgress: TLabel
-              Position.X = 176.000000000000000000
-              Size.Width = 74.000000000000000000
+              Position.X = 139.000000000000000000
             end
             inherited ScoreBar: TProgressBar
-              Size.Width = 123.000000000000000000
+              Size.Width = 90.000000000000000000
+            end
+            inherited LblScore: TLabel
+              Visible = False
             end
           end
           inherited TopProgressPanel: TPanel
-            Size.Width = 250.000000000000000000
+            Size.Width = 217.000000000000000000
+            inherited LblProgress: TLabel
+              Position.Y = 1.000000000000000000
+              Visible = False
+            end
             inherited ProgressBar: TProgressBar
-              Size.Width = 154.000000000000000000
-              Size.Height = 10.000000000000000000
+              Size.Width = 121.000000000000000000
             end
           end
         end
         inherited LbxResults: TListBox
-          Size.Width = 250.000000000000000000
-          Viewport.Width = 245.000000000000000000
-          Viewport.Height = 43.000000000000000000
+          Size.Width = 217.000000000000000000
+          Viewport.Width = 217.000000000000000000
+          Viewport.Height = 59.000000000000000000
         end
         inherited LbxFailure: TListBox
-          Size.Width = 250.000000000000000000
-          Size.Height = 25.000000000000000000
-          Viewport.Width = 250.000000000000000000
-          Viewport.Height = 25.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 4.000000000000000000
+          Viewport.Width = 217.000000000000000000
+          Viewport.Height = 4.000000000000000000
         end
+      end
+      inherited Splitter1: TSplitter
+        Position.Y = 232.000000000000000000
+        Size.Width = 217.000000000000000000
       end
     end
     inherited ErrorBoxPanel: TPanel
-      Position.Y = 337.000000000000000000
-      Size.Width = 250.000000000000000000
-      Size.Height = 38.000000000000000000
+      Position.Y = 344.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 31.000000000000000000
       inherited ErrorMessageRTF: TMemo
-        Size.Width = 250.000000000000000000
-        Size.Height = 38.000000000000000000
-        Viewport.Width = 242.000000000000000000
-        Viewport.Height = 30.000000000000000000
+        Size.Width = 217.000000000000000000
+        Size.Height = 31.000000000000000000
+        Viewport.Width = 204.000000000000000000
+        Viewport.Height = 23.000000000000000000
       end
     end
   end
@@ -430,6 +451,10 @@ inherited MobileGUITestRunner_SmXhdpiPh: TMobileGUITestRunner_SmXhdpiPh
     Size.Width = 250.000000000000000000
     Size.Height = 33.000000000000000000
     Visible = False
+  end
+  inherited PnlControl: TPanel
+    Size.Width = 33.000000000000000000
+    Size.Height = 375.000000000000000000
   end
   inherited DialogActions: TActionList
     inherited RunAction: TAction

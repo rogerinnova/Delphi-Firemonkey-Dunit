@@ -23,13 +23,13 @@ object MobileGUITestRunner: TMobileGUITestRunner
     object TopPanel: TPanel
       Align = Client
       Size.Width = 596.000000000000000000
-      Size.Height = 456.000000000000000000
+      Size.Height = 480.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 0
       object TreePanel: TPanel
         Align = Client
         Size.Width = 596.000000000000000000
-        Size.Height = 276.000000000000000000
+        Size.Height = 337.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         object lblTestTree: TLabel
@@ -45,13 +45,13 @@ object MobileGUITestRunner: TMobileGUITestRunner
         object TestTree: TTreeView
           Align = Client
           Size.Width = 596.000000000000000000
-          Size.Height = 206.000000000000000000
+          Size.Height = 267.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 0
           OnClick = TestTreeClick
           OnChange = TestTreeChange
           Viewport.Width = 596.000000000000000000
-          Viewport.Height = 206.000000000000000000
+          Viewport.Height = 267.000000000000000000
         end
         object ToolBar1: TToolBar
           Size.Width = 596.000000000000000000
@@ -67,7 +67,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object DeselectAllButton: TSpeedButton
             Action = DeselectAllAction
@@ -77,7 +76,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object SelectFailedButton: TSpeedButton
             Action = SelectFailedAction
@@ -88,7 +86,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object SelectCurrentButton: TSpeedButton
             Action = SelectCurrentAction
@@ -100,7 +97,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
             StyleLookup = 'SelectCurrentButtonStyle1'
-            Visible = True
           end
           object DeselectCurrentButton: TSpeedButton
             Action = DeselectCurrentAction
@@ -111,7 +107,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object RunAllButton: TSpeedButton
             Action = RunAction
@@ -121,7 +116,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object RunSelectedTestButton: TSpeedButton
             Action = RunSelectedTestAction
@@ -132,7 +126,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
           object StoplButton: TSpeedButton
             Action = StopAction
@@ -142,15 +135,14 @@ object MobileGUITestRunner: TMobileGUITestRunner
             Size.Width = 30.000000000000000000
             Size.Height = 30.000000000000000000
             Size.PlatformDefault = False
-            Visible = True
           end
         end
       end
       object ResultsPanel: TPanel
         Align = Bottom
-        Position.Y = 282.000000000000000000
+        Position.Y = 343.000000000000000000
         Size.Width = 596.000000000000000000
-        Size.Height = 174.000000000000000000
+        Size.Height = 137.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 1
         object ProgressPanel: TPanel
@@ -180,8 +172,8 @@ object MobileGUITestRunner: TMobileGUITestRunner
             object LbProgress: TLabel
               Align = Right
               AutoSize = True
-              Position.X = 518.000000000000000000
-              Size.Width = 78.000000000000000000
+              Position.X = 523.000000000000000000
+              Size.Width = 73.000000000000000000
               Size.Height = 26.000000000000000000
               Size.PlatformDefault = False
               TextSettings.WordWrap = False
@@ -258,7 +250,7 @@ object MobileGUITestRunner: TMobileGUITestRunner
         object LbxFailure: TListBox
           Align = Client
           Size.Width = 596.000000000000000000
-          Size.Height = 72.000000000000000000
+          Size.Height = 35.000000000000000000
           Size.PlatformDefault = False
           TabOrder = 2
           OnDblClick = LbxFailureDblClick
@@ -267,14 +259,14 @@ object MobileGUITestRunner: TMobileGUITestRunner
           DefaultItemStyles.GroupHeaderStyle = ''
           DefaultItemStyles.GroupFooterStyle = ''
           Viewport.Width = 596.000000000000000000
-          Viewport.Height = 72.000000000000000000
+          Viewport.Height = 35.000000000000000000
         end
       end
       object Splitter1: TSplitter
         Align = Bottom
         Cursor = crVSplit
         MinSize = 20.000000000000000000
-        Position.Y = 276.000000000000000000
+        Position.Y = 337.000000000000000000
         Size.Width = 596.000000000000000000
         Size.Height = 6.000000000000000000
         Size.PlatformDefault = False
@@ -282,9 +274,9 @@ object MobileGUITestRunner: TMobileGUITestRunner
     end
     object ErrorBoxPanel: TPanel
       Align = Bottom
-      Position.Y = 456.000000000000000000
+      Position.Y = 480.000000000000000000
       Size.Width = 596.000000000000000000
-      Size.Height = 79.000000000000000000
+      Size.Height = 55.000000000000000000
       Size.PlatformDefault = False
       TabOrder = 1
       object ErrorMessageRTF: TMemo
@@ -295,13 +287,13 @@ object MobileGUITestRunner: TMobileGUITestRunner
         ReadOnly = True
         Align = Client
         Size.Width = 596.000000000000000000
-        Size.Height = 79.000000000000000000
+        Size.Height = 55.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 0
         Left = 2
         Top = 2
         Viewport.Width = 588.000000000000000000
-        Viewport.Height = 71.000000000000000000
+        Viewport.Height = 47.000000000000000000
       end
     end
   end
@@ -2042,7 +2034,7 @@ object MobileGUITestRunner: TMobileGUITestRunner
           6C7408000000}
       end>
     Left = 456
-    Top = 408
+    Top = 352
   end
   object Panel1: TPanel
     Align = MostTop
@@ -2349,7 +2341,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
   object ImageList1: TImageList
     Source = <
       item
-        MultiResBitmap.LoadSize = 2
         MultiResBitmap = <
           item
             Scale = 3.000000000000000000
@@ -2377,7 +2368,6 @@ object MobileGUITestRunner: TMobileGUITestRunner
         Name = 'Nodesico'
       end
       item
-        MultiResBitmap.LoadSize = 2
         MultiResBitmap.TransparentColor = 536870912
         MultiResBitmap = <
           item

@@ -180,8 +180,8 @@ object MobileGUITestRunner: TMobileGUITestRunner
             object LbProgress: TLabel
               Align = Right
               AutoSize = True
-              Position.X = 518.000000000000000000
-              Size.Width = 78.000000000000000000
+              Position.X = 523.000000000000000000
+              Size.Width = 73.000000000000000000
               Size.Height = 26.000000000000000000
               Size.PlatformDefault = False
               TextSettings.WordWrap = False

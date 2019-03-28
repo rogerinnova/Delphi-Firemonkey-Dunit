@@ -419,9 +419,6 @@ implementation
 {$R *.LgXhdpiPh.fmx ANDROID}
 {$R *.SmXhdpiPh.fmx ANDROID}
 {$R *.iPhone55in.fmx IOS}
-{$R *.iPhone47in.fmx IOS}
-{$R *.iPhone4in.fmx IOS}
-{$R *.iPhone.fmx IOS}
 
 { TMobileGUITestRunner }
 
