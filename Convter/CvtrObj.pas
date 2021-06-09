@@ -68,9 +68,9 @@ Const
 function TDfmToFmxObject.AddArrayOfItemProperties(APropertyIdx: Integer;
   APad: AnsiString): AnsiString;
 begin
-  Result:=APad+'  '+'item'+ CRLF+
-  APad+ '  '+'Prop1 = 6'+crlf+
-  APad+ '  '+ 'end>'+CRLF;
+  Result := APad + 'item' + CRLF +
+    APad + 'Prop1 = 6' + CRLF +
+    APad + 'end>' + CRLF;
 
 
 
@@ -167,26 +167,33 @@ end;
 function TDfmToFmxObject.FMXFile(APad:AnsiString): AnsiString;
 
 begin
-  Result := APad+ 'Object ' + FObjName + ': ' + FMXClass + CRLF + FMXProperties(APad) +
-    FMXSubObjects(APad+'   ') + APad +'  end' + CRLF;
+  Result := APad + 'Object ' + FObjName + ': ' + FMXClass + CRLF + FMXProperties(APad + '  ') +
+    FMXSubObjects(APad + '  ') + APad + 'end' + CRLF;
 end;
 
 function TDfmToFmxObject.FMXProperties(APad:AnsiString): AnsiString;
 Var
+  Temp: AnsiString;
   i: integer;
 begin
   Result := '';
   for i := Low(F2DPropertyArray) to High(F2DPropertyArray) do
     if F2DPropertyArray[i, 1] = '<' then
-      Result := Result +APad+'  '+TransformProperty(F2DPropertyArray[i, 0],
-        F2DPropertyArray[i, 1])+  Crlf + AddArrayOfItemProperties(i,APad+'  ')+crlf
-    else
-    if F2DPropertyArray[i, 0] <> '' then
-      Result := Result + APad+'  '+ TransformProperty(F2DPropertyArray[i, 0],
-        F2DPropertyArray[i, 1]) + CRLF;
+    begin
+      Temp := TransformProperty(F2DPropertyArray[i, 0], F2DPropertyArray[i, 1]);
+      if Trim(Temp) <> '' then
+        Result := Result + APad + Temp + CRLF;
+      Result := Result + AddArrayOfItemProperties(i, APad) + CRLF;
+    end
+    else if F2DPropertyArray[i, 0] <> '' then
+    begin
+      Temp := TransformProperty(F2DPropertyArray[i, 0], F2DPropertyArray[i, 1]);
+      if Trim(Temp) <> '' then
+        Result := Result + APad + Temp + CRLF;
+    end;
   if IniAddProperties.Count > 0 then
     for i := 0 to FIniAddProperties.Count - 1 do
-      Result := Result + StringReplace(FIniAddProperties[i], '=', ' = ',
+      Result := Result + APad + StringReplace(FIniAddProperties[i], '=', ' = ',
         []) + CRLF;
 end;
 
@@ -200,7 +207,7 @@ begin
 
   for i := 0 to FOwnedObjs.Count - 1 do
     if FOwnedObjs[i] is TDfmToFmxObject then
-      Result := Result + CRLF + TDfmToFmxObject(FOwnedObjs[i]).FMXFile(APad+' ');
+      Result := Result + TDfmToFmxObject(FOwnedObjs[i]).FMXFile(APad);
 end;
 
 function TDfmToFmxObject.GenPasFile(const APascalSourceFileName: AnsiString)
